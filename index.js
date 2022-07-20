@@ -117,3 +117,14 @@ app.get('/admin', (req, res) => {
 
 })
 
+app.get('/admin/:orderid', (req, res) => {
+
+    const orderID = req.params.orderid
+
+    Order.find({
+        token: orderID
+    })
+        .then((result) => res.send(result))
+
+})
+

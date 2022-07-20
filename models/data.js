@@ -10,7 +10,7 @@ const dataSchema = new Schema({
 
     product_id: {
         type: Number, 
-        required: true
+        required: false
     }, 
 
     product_name: {
